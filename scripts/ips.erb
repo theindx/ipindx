@@ -1,0 +1,9 @@
+  '<%= ENV['IP'] %>':
+      categories: ['login_finder', 'attacks.22']
+      proof:
+        type: 'syslog'
+        from:
+          hostname: '<%= ENV['HOSTNAME2'] %>'
+        contents: [<% ENV['CONTENTS'].lines.each do |l| %>
+          "<%= l.strip %>"<% end %>
+        ]
