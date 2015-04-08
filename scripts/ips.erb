@@ -5,5 +5,5 @@
         from:
           hostname: '<%= ENV['HOSTNAME2'] %>'
         contents: [<% ENV['CONTENTS'].lines.each do |l| %>
-          "<%= l.strip %>"<% end %>
+          - "<%= l.strip %>"<% end %>
         ]

