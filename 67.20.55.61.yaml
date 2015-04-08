@@ -1,0 +1,11 @@
+---
+proof:
+  contents:
+  - 67.20.55.61 - - [29/Jun/2014:15:24:40 +0000] "HEAD /.bash_history HTTP/1.1" 404
+    0 "-" "-"
+  from:
+    hostname: xishaij
+  type: apache2_access_log
+categories:
+- sensitive_information_finder
+- attacks.80

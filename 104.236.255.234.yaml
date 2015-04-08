@@ -1,0 +1,17 @@
+---
+proof:
+  contents:
+  - 104.236.255.234 - - [04/Mar/2015:10:10:33 +0000] "GET /wp-login.php HTTP/1.0"
+    503 1020 "-" "-"
+  - 104.236.255.234 - - [04/Mar/2015:10:10:33 +0000] "GET /administrator/index.php
+    HTTP/1.0" 503 1020 "-" "-"
+  - 104.236.255.234 - - [04/Mar/2015:10:10:33 +0000] "GET /user HTTP/1.0" 404 1013
+    "-" "-"
+  - 104.236.255.234 - - [04/Mar/2015:10:10:34 +0000] "GET /admin.php HTTP/1.0" 503
+    1020 "-" "-"
+  from:
+    hostname: xishaij
+  type: apache2_access_log
+categories:
+- admin_panel_finder
+- attacks.80

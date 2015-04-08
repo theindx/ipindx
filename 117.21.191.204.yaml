@@ -1,0 +1,45 @@
+---
+proof:
+  contents:
+  - 'Jun 16 07:55:04 cadoth sshd[3146]: Failed password for root from 117.21.191.204
+    port 1541 ssh2'
+  - 'Jun 16 07:55:07 cadoth sshd[3146]: Failed password for root from 117.21.191.204
+    port 1541 ssh2'
+  - 'Jun 16 07:55:09 cadoth sshd[3146]: Failed password for root from 117.21.191.204
+    port 1541 ssh2'
+  - 'Jun 16 07:55:11 cadoth sshd[3146]: Failed password for root from 117.21.191.204
+    port 1541 ssh2'
+  - 'Jun 16 07:55:14 cadoth sshd[3146]: Failed password for root from 117.21.191.204
+    port 1541 ssh2'
+  - 'Jun 16 07:55:17 cadoth sshd[3146]: Failed password for root from 117.21.191.204
+    port 1541 ssh2'
+  - 'Jun 16 08:10:58 cadoth sshd[3159]: Failed password for root from 117.21.191.204
+    port 2311 ssh2'
+  - 'Jun 16 08:11:01 cadoth sshd[3159]: Failed password for root from 117.21.191.204
+    port 2311 ssh2'
+  - 'Jun 16 08:11:04 cadoth sshd[3159]: Failed password for root from 117.21.191.204
+    port 2311 ssh2'
+  - 'Jun 16 08:11:07 cadoth sshd[3159]: Failed password for root from 117.21.191.204
+    port 2311 ssh2'
+  - 'Jun 16 08:11:09 cadoth sshd[3159]: Failed password for root from 117.21.191.204
+    port 2311 ssh2'
+  - 'Jun 16 08:11:11 cadoth sshd[3159]: Failed password for root from 117.21.191.204
+    port 2311 ssh2'
+  - 'Jun 16 08:33:20 cadoth sshd[3176]: Failed password for root from 117.21.191.204
+    port 1926 ssh2'
+  - 'Jun 16 08:33:23 cadoth sshd[3176]: Failed password for root from 117.21.191.204
+    port 1926 ssh2'
+  - 'Jun 16 08:33:25 cadoth sshd[3176]: Failed password for root from 117.21.191.204
+    port 1926 ssh2'
+  - 'Jun 16 08:33:28 cadoth sshd[3176]: Failed password for root from 117.21.191.204
+    port 1926 ssh2'
+  - 'Jun 16 08:33:31 cadoth sshd[3176]: Failed password for root from 117.21.191.204
+    port 1926 ssh2'
+  - 'Jun 16 08:33:34 cadoth sshd[3176]: Failed password for root from 117.21.191.204
+    port 1926 ssh2'
+  from:
+    hostname: cadoth
+  type: syslog
+categories:
+- login_finder
+- attacks.22

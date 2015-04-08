@@ -1,0 +1,33 @@
+---
+proof:
+  contents:
+  - 'Jun 16 08:41:37 cadoth sshd[3186]: Failed password for root from 117.21.191.10
+    port 2191 ssh2'
+  - 'Jun 16 08:41:40 cadoth sshd[3186]: Failed password for root from 117.21.191.10
+    port 2191 ssh2'
+  - 'Jun 16 08:41:42 cadoth sshd[3186]: Failed password for root from 117.21.191.10
+    port 2191 ssh2'
+  - 'Jun 16 08:41:43 cadoth sshd[3186]: Failed password for root from 117.21.191.10
+    port 2191 ssh2'
+  - 'Jun 16 08:41:46 cadoth sshd[3186]: Failed password for root from 117.21.191.10
+    port 2191 ssh2'
+  - 'Jun 16 08:41:48 cadoth sshd[3186]: Failed password for root from 117.21.191.10
+    port 2191 ssh2'
+  - 'Jun 16 09:00:43 cadoth sshd[3205]: Failed password for root from 117.21.191.10
+    port 2091 ssh2'
+  - 'Jun 16 09:00:47 cadoth sshd[3205]: Failed password for root from 117.21.191.10
+    port 2091 ssh2'
+  - 'Jun 16 09:00:49 cadoth sshd[3205]: Failed password for root from 117.21.191.10
+    port 2091 ssh2'
+  - 'Jun 16 09:00:51 cadoth sshd[3205]: Failed password for root from 117.21.191.10
+    port 2091 ssh2'
+  - 'Jun 16 09:00:53 cadoth sshd[3205]: Failed password for root from 117.21.191.10
+    port 2091 ssh2'
+  - 'Jun 16 09:00:55 cadoth sshd[3205]: Failed password for root from 117.21.191.10
+    port 2091 ssh2'
+  from:
+    hostname: cadoth
+  type: syslog
+categories:
+- login_finder
+- attacks.22

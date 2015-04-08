@@ -1,0 +1,69 @@
+---
+proof:
+  contents:
+  - 'Jun 15 08:35:29 cadoth sshd[2701]: Failed password for root from 115.239.248.57
+    port 1114 ssh2'
+  - 'Jun 15 08:35:31 cadoth sshd[2701]: Failed password for root from 115.239.248.57
+    port 1114 ssh2'
+  - 'Jun 15 08:35:34 cadoth sshd[2701]: Failed password for root from 115.239.248.57
+    port 1114 ssh2'
+  - 'Jun 15 08:35:36 cadoth sshd[2701]: Failed password for root from 115.239.248.57
+    port 1114 ssh2'
+  - 'Jun 15 08:35:39 cadoth sshd[2701]: Failed password for root from 115.239.248.57
+    port 1114 ssh2'
+  - 'Jun 15 08:35:42 cadoth sshd[2701]: Failed password for root from 115.239.248.57
+    port 1114 ssh2'
+  - 'Jun 15 08:52:06 cadoth sshd[2722]: Failed password for root from 115.239.248.57
+    port 4246 ssh2'
+  - 'Jun 15 08:52:14 cadoth sshd[2722]: Failed password for root from 115.239.248.57
+    port 4246 ssh2'
+  - 'Jun 15 08:52:17 cadoth sshd[2722]: Failed password for root from 115.239.248.57
+    port 4246 ssh2'
+  - 'Jun 15 08:52:20 cadoth sshd[2722]: Failed password for root from 115.239.248.57
+    port 4246 ssh2'
+  - 'Jun 15 08:52:22 cadoth sshd[2722]: Failed password for root from 115.239.248.57
+    port 4246 ssh2'
+  - 'Jun 15 08:52:25 cadoth sshd[2722]: Failed password for root from 115.239.248.57
+    port 4246 ssh2'
+  - 'Jun 15 13:07:04 cadoth sshd[2861]: Failed password for root from 115.239.248.57
+    port 2054 ssh2'
+  - 'Jun 15 13:07:07 cadoth sshd[2861]: Failed password for root from 115.239.248.57
+    port 2054 ssh2'
+  - 'Jun 15 13:07:10 cadoth sshd[2861]: Failed password for root from 115.239.248.57
+    port 2054 ssh2'
+  - 'Jun 15 13:07:13 cadoth sshd[2861]: Failed password for root from 115.239.248.57
+    port 2054 ssh2'
+  - 'Jun 15 13:07:15 cadoth sshd[2861]: Failed password for root from 115.239.248.57
+    port 2054 ssh2'
+  - 'Jun 15 13:07:18 cadoth sshd[2861]: Failed password for root from 115.239.248.57
+    port 2054 ssh2'
+  - 'Jun 15 13:18:41 cadoth sshd[2877]: Failed password for root from 115.239.248.57
+    port 2799 ssh2'
+  - 'Jun 15 13:18:46 cadoth sshd[2877]: Failed password for root from 115.239.248.57
+    port 2799 ssh2'
+  - 'Jun 15 13:18:49 cadoth sshd[2877]: Failed password for root from 115.239.248.57
+    port 2799 ssh2'
+  - 'Jun 15 13:18:52 cadoth sshd[2877]: Failed password for root from 115.239.248.57
+    port 2799 ssh2'
+  - 'Jun 15 13:18:54 cadoth sshd[2877]: Failed password for root from 115.239.248.57
+    port 2799 ssh2'
+  - 'Jun 15 13:18:57 cadoth sshd[2877]: Failed password for root from 115.239.248.57
+    port 2799 ssh2'
+  - 'Jun 15 13:38:34 cadoth sshd[2901]: Failed password for root from 115.239.248.57
+    port 3820 ssh2'
+  - 'Jun 15 13:38:38 cadoth sshd[2901]: Failed password for root from 115.239.248.57
+    port 3820 ssh2'
+  - 'Jun 15 13:38:40 cadoth sshd[2901]: Failed password for root from 115.239.248.57
+    port 3820 ssh2'
+  - 'Jun 15 13:38:43 cadoth sshd[2901]: Failed password for root from 115.239.248.57
+    port 3820 ssh2'
+  - 'Jun 15 13:38:45 cadoth sshd[2901]: Failed password for root from 115.239.248.57
+    port 3820 ssh2'
+  - 'Jun 15 13:38:47 cadoth sshd[2901]: Failed password for root from 115.239.248.57
+    port 3820 ssh2'
+  from:
+    hostname: cadoth
+  type: syslog
+categories:
+- login_finder
+- attacks.22

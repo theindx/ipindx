@@ -1,0 +1,21 @@
+---
+proof:
+  contents:
+  - 'Jun 15 11:01:29 cadoth sshd[2793]: Failed password for root from 117.21.226.103
+    port 2698 ssh2'
+  - 'Jun 15 11:01:33 cadoth sshd[2793]: Failed password for root from 117.21.226.103
+    port 2698 ssh2'
+  - 'Jun 15 11:01:35 cadoth sshd[2793]: Failed password for root from 117.21.226.103
+    port 2698 ssh2'
+  - 'Jun 15 11:01:38 cadoth sshd[2793]: Failed password for root from 117.21.226.103
+    port 2698 ssh2'
+  - 'Jun 15 11:01:40 cadoth sshd[2793]: Failed password for root from 117.21.226.103
+    port 2698 ssh2'
+  - 'Jun 15 11:01:43 cadoth sshd[2793]: Failed password for root from 117.21.226.103
+    port 2698 ssh2'
+  from:
+    hostname: cadoth
+  type: syslog
+categories:
+- login_finder
+- attacks.22

