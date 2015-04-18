@@ -1,2 +1,3 @@
 - [ ] Automate.
     - [ ] Buy some honeypot servers.
+- [ ] Web interface. Static or CGI?
