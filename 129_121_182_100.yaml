@@ -31,4 +31,4 @@ proof:
   type: apache2_access_log
 categories:
 - exploit_finder.shellshock
-- attacks.80
+- attacks.http

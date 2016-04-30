@@ -14,4 +14,4 @@ proof:
   type: apache2_access_log
 categories:
 - admin_panel_finder
-- attacks.80
+- attacks.http

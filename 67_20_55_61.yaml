@@ -8,4 +8,4 @@ proof:
   type: apache2_access_log
 categories:
 - sensitive_information_finder
-- attacks.80
+- attacks.http
