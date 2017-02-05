@@ -1,0 +1,4 @@
+#+TITLE: Apertron's list of bad IP addresses.
+
+* TODOs
+** TODO Create a schema for a blacklisted IP
